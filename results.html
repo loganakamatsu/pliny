@@ -9,13 +9,16 @@
       <div class="gcse-search" data-queryParameterName="q"></div>
     </div>
     <div> 
-      <a id="googlink" href="https://www.google.com/search?q="> </a>
+      <div>
+        Search more on Google: 
+        <a id="googlink" href="https://www.google.com/search?q="> </a>
+      </div>
       <script>
         const urlParams = new URLSearchParams(window.location.search);
         const query = urlParams.get('q');
         let a = document.getElementById("googlink");
         a.href = "https://www.google.com/search?q=" + query;
-        a.innerText = query.toString() + " on Google";
+        a.innerText = query.toString();
       </script>
     </div>
   </body>
