@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Search Reccipes</title>
+    <link rel="stylesheet" href="search-style.css">
+    <script async src="https://cse.google.com/cse.js?cx=014784508626723296342:kyqyp7cquxn"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="gcse-search" data-queryParameterName="q"></div>
+    </div>
+    <div> 
+      <a id="googlink" href="https://www.google.com/search?q="> </a>
+      <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get('q');
+        let a = document.getElementById("googlink");
+        a.href = "https://www.google.com/search?q=" + query;
+        a.innerText = query.toString() + " on Google";
+      </script>
+    </div>
+  </body>
+</html>
